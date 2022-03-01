@@ -1,0 +1,75 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: consult Senescyt sad path 1
+  steps:
+  - user: |
+      hola
+    intent: greet
+  - action: utter_greet
+  - user: |
+      bien
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hola!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      asombroso
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      adiós!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hola
+    intent: greet
+  - action: utter_greet
+  - user: |
+      no me siento muy bien
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      si
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hola
+    intent: greet
+  - action: utter_greet
+  - user: |
+      mal
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no en realidad
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      adiós!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      eres un robot?
+    intent: bot_challenge
+  - action: utter_iamabot

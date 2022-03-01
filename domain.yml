@@ -1,0 +1,61 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- mood_great
+- set_identification
+- affirm
+- set_email
+- goodbye
+- deny
+- mood_unhappy
+- bot_challenge
+- ask_amazon
+- set_product
+entities:
+- product
+slots:
+  product:
+    type: text
+    initial_value: test
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: product
+responses:
+  utter_greet:
+  - text: Hola! ¿Cómo estás?
+  utter_cheer_up:
+  - text: 'Quizá esto pueda animarte:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: ¿Ya estás animado?
+  utter_happy:
+  - text: Genial!
+  utter_goodbye:
+  - text: Adiós
+  utter_iamabot:
+  - text: Yo soy un bot, desarrollado por RPA - Bayteq.
+  utter_bot_product:
+  - text: ¿Qué producto deseas consultar?
+  utter_bot_execution:
+  - text: Estoy procesando tu petición...
+  utter_help:
+  - text: La información, ¿Fue de ayuda?
+  utter_help_no:
+  - text: 'Oh! no 😨'
+actions:
+- action_ask_amazon
+- utter_bot_response
+- utter_help_no
+- utter_help
+- utter_bot_execution
+- utter_bot_product
+- utter_iamabot
+- utter_goodbye
+- utter_happy
+- utter_did_that_help
+- utter_cheer_up
+- utter_greet

@@ -1,0 +1,73 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - holis
+    - hey
+    - buen día
+    - buen dia
+    - buenas noches
+    - buena noche
+    - buenas tardes
+    - buena tarde
+    - buenos dias
+    - buenos días
+    - que tal
+- intent: goodbye
+  examples: |
+    - adiós
+    - adios
+    - bye
+    - nos vemos luego
+- intent: affirm
+  examples: |
+    - si
+    - sí
+    - confirmo
+    - sip
+    - Si
+- intent: deny
+  examples: |
+    - no
+    - n
+    - nunca
+    - nop
+    - no en realidad
+- intent: mood_great
+  examples: |
+    - perfecto
+    - genial
+    - asombroso
+    - maravilloso
+    - Me siento muy bien
+    - Bien
+    - bien
+- intent: mood_unhappy
+  examples: |
+    - mi dia fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - muy triste
+    - mal
+- intent: bot_challenge
+  examples: |
+    - Eres un robot?
+    - Eres un humano?
+    - Estoy hablando con un robot?
+    - Estoy hablando con un humano?
+- intent: set_product
+  examples: |
+    - El producto es [samsung note](product)
+    - Es [mac](product)
+    - Quiero una [cepillo de cabello](product)
+    - Quiero un [celular nuevo](product)
+    - Ver [mac pro](product)
+    - Quiero ver [computadora lenovo](product)
+    - Deseo ver [computadora huawei](product)
+    - Un [libros](product)
+    - Una [nada es tan terrible](product)
+    - [la madre](product)
+- regex: product
+  examples: |
+    - [a-zA-Z0-9 ]{2,15}

@@ -1,0 +1,15 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KSDzE4EGxQIAPEFQdQ==": "utter_happy",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KSDzE4l0SkZiQUElfmNiAVKZa5w=": "utter_bot_product",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KSDzE4l0SkZiQUEl5cYk5ZfEFxTlp5QmY/EXsmGxACn3iUY=": "action_listen",
+    "eJylj1EKgzAQRK+yB/AEuYpISHWpCzUbNhuhhNzdFBV/WpT6NwPDm5k2lwZyEJyt65XYG8irsN5NaGAzL4qKvmZTRKkZ8tWqgacgajlhJFUUu0b/I5ysmJiHD99dnDK6EN73MQ9WG4SH1H/5dR3241ylkBJGA+1W0jWw0yMe1aVbANLUrXM=": "action_ask_amazon",
+    "eJylz1EKwjAMBuCr5AA7Qa8yRohb0KJtSpsKWnZ3OzbxRVmZbwn8fH/Sl7mDEiLfkUa14g2UdUBPjg1sy80mZV+zOXGsGevrqgbOkVnnHSOrcsQ1ekzYucKJTItPjadcKITH/8xJFEOUKY9f/mrHfjxXFauWk4F+Kxk6eOuJP9VtPKUrkqOnHKoYXjbF0zU=": "utter_help",
+    "eJy10FEKwyAMBuCr5AA9gVcpRbI2bLJqRONgk959ljr2slHp2JuBn+9P7PPSQfaBbhpHMewU5O2hHVpSUIfZRCFXsilSKBnjyigKzoFIlh0jiVDQW/SYsLOFZZ5WHxtXuaD399+ZE4v2gac0frirHftyXFGMGIoK+loydPDSI72r23iMV40WH/yHivqrNPsj9vAEakP2Mg==": "action_listen",
+    "eJy1kV0KwjAQhK+SA/QEuUopYW23Gmx+2GwEDbm7kUZ8sTQofduB4ZvZ3T7lTiRPeFMwsnZWirQOyoJBKapYdGC0xRsDUvFoWyRLcSZEzjuMyIykVutvhJ0WxrnpxYfGKhfw/v4/5uRYeXJTHL/s1Q7bWK5QNGsMUvQ1ZOjEmx7wE92Gh3BVYODhDoioV8XFH1Z/6/Uwz5pMzsMTVfoQcw==": "utter_happy",
+    "eJy1kV0KgzAQhK+SA3iCXEUkbHVtQ80Pm02hDd69KUb6UjFUfNuB4ZvZ3TbNjUie8KGgZ+2sFGkZlAWDUhQx6cBoszcGpOzRNkuW4kqIPO8wIjOSWqz/EXZaGOeGDx8qq9zA++dxzMWx8uSG2P/Yqx62sVymaNYYpGhLSNeIlR7wG12Hh3BXYODlTogoV8XJn1Z/6/UwjprMobeviO4N/rwp7g==": "action_listen"
+  }
+}

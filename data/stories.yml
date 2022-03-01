@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy_senescyt
+#   - intent: affirm
+#   - action: utter_identification
+#   - intent: set_identification
+#     entities:
+#     - identification: '1750201336'
+#   - slot_was_set:
+#     - identification: '1750201336'
+#   - action: utter_email
+#   - intent: set_email
+#     entities:
+#     - email: example@test.com
+#   - slot_was_set:
+#     - email: example@test.com
+#   - action: action_ask_senescyt
+#   - action: utter_bot_response
+#   - action: utter_help
+#   - intent: affirm
+#   - action: utter_happy
+
+- story: search product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_bot_product
+  - intent: set_product
+    entities:
+    - product: example test
+  - slot_was_set:
+    - product: example test
+  - action: action_ask_amazon
+  - action: utter_help
+  - intent: affirm
+  - action: utter_happy

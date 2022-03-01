@@ -1,0 +1,24 @@
+version: "2.0"
+
+rules:
+
+- rule: Say Adiós anytime the user says adios
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'Yo soy un bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Consult product at any time that the user wishes
+  steps:
+  - action: utter_bot_product
+  - intent: set_product
+    entities:
+    - product: example test
+  - slot_was_set:
+    - product: example test
+  - action: action_ask_amazon
+  - action: utter_help
