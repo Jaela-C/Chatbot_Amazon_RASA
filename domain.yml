@@ -26,12 +26,8 @@ slots:
       entity: product
 responses:
   utter_greet:
-  - text: Hola! ¿Cómo estás?
-  utter_cheer_up:
-  - text: 'Quizá esto pueda animarte:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: ¿Ya estás animado?
+  - text: Hola! 👋
+  - text: Qué tal! 😎
   utter_happy:
   - text: Genial!
   utter_goodbye:
@@ -40,22 +36,19 @@ responses:
   - text: Yo soy un bot, desarrollado por RPA - Bayteq.
   utter_bot_product:
   - text: ¿Qué producto deseas consultar?
-  utter_bot_execution:
-  - text: Estoy procesando tu petición...
+  utter_bot_product_deny:
+  - text: Consulta otro producto
   utter_help:
   - text: La información, ¿Fue de ayuda?
   utter_help_no:
   - text: 'Oh! no 😨'
 actions:
 - action_ask_amazon
-- utter_bot_response
 - utter_help_no
 - utter_help
-- utter_bot_execution
 - utter_bot_product
 - utter_iamabot
 - utter_goodbye
 - utter_happy
-- utter_did_that_help
-- utter_cheer_up
 - utter_greet
+- utter_bot_product_deny

@@ -54,12 +54,10 @@ stories:
 #   - intent: affirm
 #   - action: utter_happy
 
-- story: search product
+- story: search product path 1
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
   - action: utter_bot_product
   - intent: set_product
     entities:
@@ -70,3 +68,19 @@ stories:
   - action: utter_help
   - intent: affirm
   - action: utter_happy
+
+- story: search product path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_bot_product
+  - intent: set_product
+    entities:
+    - product: example test
+  - slot_was_set:
+    - product: example test
+  - action: action_ask_amazon
+  - action: utter_help
+  - intent: deny
+  - action: utter_help_no
+  - action: utter_bot_product_deny

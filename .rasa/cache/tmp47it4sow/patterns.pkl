@@ -1,0 +1,6 @@
+[
+  {
+    "name": "product",
+    "pattern": "\\d{2,12}"
+  }
+]
