@@ -24,11 +24,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 
-user_name = 'api.runner'
-password = 'Bayteq123.'
-api_key = 'LI0EI2?vwJPgyq;LgS_^RxlFwm90IthXt9Bf2JmY'
-base_url = 'https://mutualista-1.my.automationanywhere.digital/'
-
 
 class ActionHelloWorld(Action):
 
